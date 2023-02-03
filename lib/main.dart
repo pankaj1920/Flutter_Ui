@@ -52,19 +52,37 @@ class HomeScreen extends StatelessWidget {
           ),
           TextField(
             decoration: InputDecoration(
-              focusedBorder: OutlineInputBorder(
-                  borderRadius: BorderRadius.circular(kBorderRadius),
-                  borderSide: const BorderSide(width: 1, color: kGreyColor)),
-              border: OutlineInputBorder(
-                  borderRadius: BorderRadius.circular(kBorderRadius),
-                  borderSide: const BorderSide(width: 1, color: kGreyColor)),
-              prefixIcon: Container(
-                width: 24,
-                height: 24,
-                alignment: Alignment.center,
-                child: SvgPicture.asset("assets/search_icon.svg"),
-              )
-            ),
+                focusedBorder: OutlineInputBorder(
+                    borderRadius: BorderRadius.circular(kBorderRadius),
+                    borderSide: const BorderSide(width: 1, color: kGreyColor)),
+                border: OutlineInputBorder(
+                    borderRadius: BorderRadius.circular(kBorderRadius),
+                    borderSide: const BorderSide(width: 1, color: kGreyColor)),
+                prefixIcon: Container(
+                  width: 24,
+                  height: 24,
+                  alignment: Alignment.center,
+                  child: SvgPicture.asset("assets/search_icon.svg"),
+                ),
+                hintText: "Search Folder",
+                hintStyle: kQuestrialMedium.copyWith(
+                    fontSize: SizeConfig.blockSizeHorizontal! * 4,
+                    color: kDarkGreyColor)),
+            style: kQuestrialMedium.copyWith(
+                fontSize: SizeConfig.blockSizeHorizontal! * 4,
+                color: kDarkGreyColor),
+          ),
+          SizedBox(
+            height: SizeConfig.blockSzeVertical! * 4,
+          ),
+          Row(
+            children: [
+              Text('Recent'),
+              SizedBox(
+                width: SizeConfig.blockSizeHorizontal! * 2,
+              ),
+              SvgPicture.asset('assets/arrow_down_icon.svg')
+            ],
           )
         ],
       ),

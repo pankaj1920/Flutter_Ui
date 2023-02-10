@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_svg/flutter_svg.dart';
 
 class TravelHomeScreen extends StatefulWidget {
   const TravelHomeScreen({super.key});
@@ -24,10 +25,12 @@ class _TravelHomeScreenState extends State<TravelHomeScreen> {
                     Container(
                       height: 57.6,
                       width: 57.6,
-                      padding: EdgeInsets.all(28),
+                      padding: EdgeInsets.all(18),
                       decoration: BoxDecoration(
                           borderRadius: BorderRadius.circular(9.6),
                           color: Color(0x080a0928)),
+                      child: SvgPicture.asset("assets/svg/icon_drawer.svg"),
+                     
                     )
                   ],
                 ))

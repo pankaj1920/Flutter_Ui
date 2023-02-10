@@ -10,6 +10,30 @@ class TravelHomeScreen extends StatefulWidget {
 class _TravelHomeScreenState extends State<TravelHomeScreen> {
   @override
   Widget build(BuildContext context) {
-    return Container();
+    return Scaffold(
+      body: SafeArea(
+          child: Container(
+        child: ListView(
+          physics: BouncingScrollPhysics(),
+          children: <Widget>[
+            Container(
+                height: 57.6,
+                margin: EdgeInsets.only(top: 82.8, left: 28.8, right: 28.8),
+                child: Row(
+                  children: <Widget>[
+                    Container(
+                      height: 57.6,
+                      width: 57.6,
+                      padding: EdgeInsets.all(28),
+                      decoration: BoxDecoration(
+                          borderRadius: BorderRadius.circular(9.6),
+                          color: Color(0x080a0928)),
+                    )
+                  ],
+                ))
+          ],
+        ),
+      )),
+    );
   }
 }

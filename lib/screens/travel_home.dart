@@ -19,8 +19,9 @@ class _TravelHomeScreenState extends State<TravelHomeScreen> {
           children: <Widget>[
             Container(
                 height: 57.6,
-                margin: EdgeInsets.only(top: 82.8, left: 28.8, right: 28.8),
+                margin: EdgeInsets.only(top: 22.8, left: 28.8, right: 28.8),
                 child: Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: <Widget>[
                     Container(
                       height: 57.6,
@@ -31,9 +32,23 @@ class _TravelHomeScreenState extends State<TravelHomeScreen> {
                           color: Color(0x080a0928)),
                       child: SvgPicture.asset("assets/svg/icon_drawer.svg"),
                      
-                    )
+                    ),
+                    Container(
+                      height: 57.6,
+                      width: 57.6,
+                      padding: EdgeInsets.all(18),
+                      decoration: BoxDecoration(
+                          borderRadius: BorderRadius.circular(9.6),
+                          color: Color(0x080a0928)),
+                      child: SvgPicture.asset("assets/svg/icon_search.svg"),
+
+                    ),
                   ],
-                ))
+                )),
+            
+            //Text Widget for title
+            Padding(padding: EdgeInsets.only(top: 48,left: 28.8)),
+            Text("data")
           ],
         ),
       )),

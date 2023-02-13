@@ -1,6 +1,6 @@
 {
-    "name": "dropbox_ui",
-    "short_name": "dropbox_ui",
+    "name": "flutter_sample",
+    "short_name": "flutter_sample",
     "start_url": ".",
     "display": "standalone",
     "background_color": "#0175C2",

@@ -15,6 +15,9 @@ class FlutterUi extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      themeMode: ThemeMode.light,
+      theme: ThemeData(
+          primarySwatch: Colors.deepPurple, brightness: Brightness.light),
       routes: {
         "/": (((context) => const UiList())),
         MyRoute.cignifiSplash: (context) => const CignifiSplash(),

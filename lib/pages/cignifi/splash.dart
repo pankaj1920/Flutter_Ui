@@ -23,7 +23,7 @@ class _CignifiSplashState extends State<CignifiSplash> {
   Widget build(BuildContext context) {
     return Container(
       decoration: const BoxDecoration(color: cigSplashColor),
-      child: Image.asset("images/cignigi/img_logo_white.png"),
+      child: Image.asset("assets/images/cignigi/img_logo_white.png"),
     );
   }
 }
